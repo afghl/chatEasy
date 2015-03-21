@@ -1,0 +1,4 @@
+#post-header.header
+	all the posts
+#post-list
+	%ul

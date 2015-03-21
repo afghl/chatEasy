@@ -46,3 +46,13 @@ gem 'backbone-rails', '1.1.2'
 
 # active admine: to manage models in the browser
 gem 'activeadmin', '~> 1.0.0.pre1'
+
+#passing data to front-end
+gem 'gon'
+
+#can sent a get request
+gem 'rest-client'
+
+#tranfer hamlbars to jst in front-end
+gem 'handlebars_assets'
+gem 'hamlbars', '~> 2.0'

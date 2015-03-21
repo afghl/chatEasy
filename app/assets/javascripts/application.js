@@ -17,9 +17,15 @@
 //= require underscore
 //= require backbone
 //= require backbone.marionette
+//= require handlebars
 //= require turbolinks
 //= require_tree .
 
 
 /** application **/
-//= require ./app.js
+//= require ./app
+
+//= require_tree ./apps
+//= require_tree ./collections
+//= require_tree ./models
+//= require_tree ./views
