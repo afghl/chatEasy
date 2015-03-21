@@ -43,3 +43,6 @@ gem 'haml'
 gem 'bootstrap-sass', '~>3.3.3'
 # backbone in front-end
 gem 'backbone-rails', '1.1.2'
+
+# active admine: to manage models in the browser
+gem 'activeadmin', '~> 1.0.0.pre1'
