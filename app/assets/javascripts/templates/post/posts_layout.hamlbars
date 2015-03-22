@@ -1,3 +1,14 @@
-#posts
-	posts_layout
-#posts-list
+#posts.modal-dialog
+	.modal-content
+		.modal-header.js-draggable-header
+			.bootstrap-dialog-header
+				.bootstrap-dialog-close-button
+					%button.close ×
+				.bootstrap-dialog-title Posts
+		.modal-body
+			.bootstrap-dialog-body
+				#posts-list.bootstrap-dialog-message
+		.modal-footer
+			.bootstrap-dialog-footer
+				.bootstrap-dialog-footer-buttons
+					%button.btn.btn-default Close

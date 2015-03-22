@@ -40,6 +40,7 @@ gem 'execjs'
 
 # haml
 gem 'haml'
+#use bootstrap
 gem 'bootstrap-sass', '~>3.3.3'
 # backbone in front-end
 gem 'backbone-rails', '1.1.2'
@@ -56,3 +57,6 @@ gem 'rest-client'
 #tranfer hamlbars to jst in front-end
 gem 'handlebars_assets'
 gem 'hamlbars', '~> 2.0'
+
+#use compass
+gem 'compass-rails'

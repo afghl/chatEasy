@@ -21,6 +21,8 @@
 //= require turbolinks
 //= require_tree .
 
+/** helpers **/
+//= require_tree ./helpers
 
 /** application **/
 //= require ./app

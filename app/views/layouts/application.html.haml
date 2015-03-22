@@ -1,19 +1,14 @@
 !!!
 %html
 %head
-	%title Forum
+	%title Chat Easy
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
+	%meta{name: "viewport", content: "initial-scale=1.0, maximum-scale=1.0, width=device-width"}
 	= csrf_meta_tags 
 %body
-	%header
-		.wrapper
-			#logo
-				%p Chat Easy
-	.wrapper
-		%p.notice= notice
-		%p.alert= alert
-	.wrapper
-		=yield
-	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+	= render 'layouts/header'
+	=yield
+	.footer
 
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
 	=yield :footer
