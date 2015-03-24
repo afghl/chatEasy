@@ -15,9 +15,9 @@
 				%li
 					%a{:href => "#"} TechMeMe
 		#main-content.col-sm-3
-		
+
 -content_for :footer do
 	:coffeescript
 		$ ->
 			CEApp.start()
-			new helpers.dragHelper().initialize('.modal-dialog')
+			new helpers.DragHelper().drag('.js-draggable-header').to_move('.modal-dialog')
