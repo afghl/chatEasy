@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'realtime/:message' => 'realtime#message'
+
   ActiveAdmin.routes(self)
   root 'page#index'
   

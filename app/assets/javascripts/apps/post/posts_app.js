@@ -1,4 +1,4 @@
-CEApp.module('PostApp', function(PostsApp, BlogApp, Backbone, Marionette, $, _){
+CEApp.module('PostApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
 
   this.PostsAppRouter = Marionette.AppRouter.extend({
     appRoutes: {
