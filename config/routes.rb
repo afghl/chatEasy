@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   root 'page#index'
   
   namespace :api do
-    
     resources :posts
   end
 
