@@ -19,6 +19,7 @@
 //= require backbone.marionette
 //= require handlebars
 //= require turbolinks
+//= require socket.io
 //= require_tree .
 
 /** helpers **/

@@ -1,4 +1,4 @@
-CEApp.module('PostApp', function(PostsApp, BlogApp, Backbone, Marionette, $, _){
+CEApp.module('PostApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
 
 	this.PostItemView = Marionette.ItemView.extend({
 		template: JST['post/post_item'],
