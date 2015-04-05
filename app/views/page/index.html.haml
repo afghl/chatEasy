@@ -1,19 +1,6 @@
 .container.main-container
 	.row
-		.col-sm-2.left-nav
-			%ul#sidebar.nav.nav-stacked.affix
-				%li
-					%a{:href => "#"} The Next Web
-				%li
-					%a{:href => "#"} Mashable
-				%li
-					%a{:href => "#"} TechCrunch
-				%li
-					%a{:href => "#"} GitHub
-				%li
-					%a{:href => "#"} In1
-				%li
-					%a{:href => "#"} TechMeMe
+		= render "left_nav"
 		#main-content.col-sm-3
 
 - content_for :footer do
