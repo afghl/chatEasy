@@ -22,11 +22,11 @@
 //= require socket.io
 //= require_tree .
 
-/** helpers **/
-//= require_tree ./helpers
-
 /** application **/
 //= require ./app
+
+/** helpers **/
+//= require_tree ./helpers
 
 //= require_tree ./apps
 //= require_tree ./collections

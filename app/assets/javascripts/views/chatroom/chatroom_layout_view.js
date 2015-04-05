@@ -20,7 +20,7 @@ CEApp.module('ChatroomApp', function(ChatroomApp, CEApp, Backbone, Marionette, $
     },
 
     onRender: function() {
-      new helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
+      new CEApp.helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
     },
 
     sendMessage: function() {
