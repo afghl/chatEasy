@@ -1,5 +1,6 @@
 CEApp.module('RealtimeApp', function(RealtimeApp, CEApp, Backbone, Marionette, $, _){
-	this.on('start', function() {
+	
+  this.on('start', function() {
 		this.socket = io.connect(gon.socketUrl)
 		console.log(this.socket)
 		this.addSocketHandles()
@@ -7,7 +8,7 @@ CEApp.module('RealtimeApp', function(RealtimeApp, CEApp, Backbone, Marionette, $
   })
 
   this.addSocketHandles = function() {
-  	this.socket.on('receive-message', this.receiveMessage)
+  	this.socket.on('client:receive-message', this.receiveMessage)
   }
 
   this.addEventsHandles = function() {
@@ -16,7 +17,7 @@ CEApp.module('RealtimeApp', function(RealtimeApp, CEApp, Backbone, Marionette, $
 
   this.sendMessage = function(message) {
   	var socket = CEApp.RealtimeApp.socket
-  	socket.emit('message', message)
+  	socket.emit('client:send-message', message)
   }
 
   this.receiveMessage = function(message) {

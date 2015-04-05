@@ -9,7 +9,7 @@ io.on('connection', function(socket){
   //   socket.emit('rt-change', JSON.parse(message));
   // });
 
-	socket.on('message', function(message) {
+	socket.on('client:send-message', function(message) {
 		console.log(message)
 		//TODO send message to everyone
 		// socket.broadcast.emit('user connected');
