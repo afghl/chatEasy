@@ -21,6 +21,6 @@ CEApp.module('RealtimeApp', function(RealtimeApp, CEApp, Backbone, Marionette, $
   }
 
   this.receiveMessage = function(message) {
-  	console.log(message)
+    CEApp.events.trigger('receive-message', message)
   }
 })

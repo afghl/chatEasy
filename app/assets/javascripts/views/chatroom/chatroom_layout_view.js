@@ -27,6 +27,7 @@ CEApp.module('ChatroomApp', function(ChatroomApp, CEApp, Backbone, Marionette, $
       var message = $(this.ui.message).val()
       //TODO
       $(this.ui.message).val('')
+      CEApp.events.trigger('send-message', message)
     }
   })
 })

@@ -10,8 +10,7 @@ io.on('connection', function(socket){
   // });
 
 	socket.on('client:send-message', function(message) {
-		console.log(message)
-		//TODO send message to everyone
-		// socket.broadcast.emit('user connected');
+		//TODO send message to everyone (include the one send message)
+		io.emit('client:receive-message', message);
 	})
 });
