@@ -7,8 +7,8 @@
 	= csrf_meta_tags 
 %body
 	= render 'layouts/header'
-	=yield
+	= yield
 	.footer
-
+	= include_gon
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
-	=yield :footer
+	= yield :footer

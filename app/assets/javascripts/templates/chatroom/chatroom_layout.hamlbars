@@ -1,0 +1,17 @@
+#chatroom.modal-dialog
+  .modal-content
+    .modal-header.js-draggable-header
+      .bootstrap-dialog-header
+        .bootstrap-dialog-close-button
+          %button.close ×
+        .bootstrap-dialog-title Chatroom
+    .modal-body
+      .bootstrap-dialog-body
+        #message-list.bootstrap-dialog-message
+    .modal-footer
+      .bootstrap-dialog-footer
+        #message
+          %form.form-inline
+            .form-group
+              %input#message-input.form-control
+              %a#js-send.btn.btn-default send

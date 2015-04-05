@@ -4,8 +4,17 @@ CEApp.module('PostApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
     template: JST["post/posts_layout"],
     el: '#main-content',
 
-    regions:{
+		ui: {
+      header: '.js-draggable-header',
+      dialog: '.modal-dialog'
+    },
+    
+    regions: {
       postsRegion: '#posts-list'
+    },
+
+    onRender: function() {
+    	new helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
     }
   })
 })

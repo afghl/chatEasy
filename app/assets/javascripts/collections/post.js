@@ -6,7 +6,6 @@ CEApp.module('Collections', function(PostsApp, CEApp, Backbone, Marionette, $, _
 
 		initialize: function (options) {
 			this.on('add', function(post) {
-				console.log(post)
 			})
 			this.privateFunction()
 		},
