@@ -10,8 +10,8 @@
         #message-list.bootstrap-dialog-message
     .modal-footer
       .bootstrap-dialog-footer
-        #message-input
+        #message
           %form.form-inline
             .form-group
-              %input.form-control{id: 'message-input'}
-              %a.btn.btn-default send
+              %input#message-input.form-control
+              %a#js-send.btn.btn-default send

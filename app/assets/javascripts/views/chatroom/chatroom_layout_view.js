@@ -6,15 +6,27 @@ CEApp.module('ChatroomApp', function(ChatroomApp, CEApp, Backbone, Marionette, $
 
     ui: {
       header: '.js-draggable-header',
-      dialog: '.modal-dialog'
+      dialog: '.modal-dialog',
+      send: '#js-send',
+      message: '#message-input'
     },
 
-    regions:{
+    events: {
+      'click #js-send': 'sendMessage'
+    },
+
+    regions: {
       messageListRegions : '#message-list'
     },
 
     onRender: function() {
       new helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
+    },
+
+    sendMessage: function() {
+      var message = $(this.ui.message).val()
+      //TODO
+      $(this.ui.message).val('')
     }
   })
 })

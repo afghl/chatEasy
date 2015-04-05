@@ -8,7 +8,7 @@ CEApp.module('ChatroomApp', function(ChatroomApp, CEApp, Backbone, Marionette, $
 
   this.ChatroomAppController = Marionette.Controller.extend({
     initChatroom: function () {
-      var msgs = [{user:'user_a',message:'user_a said ...'},{user:'user_b',message:'user_b said ...'}]
+      var msgs = [{user:'user_a',message:'user_a said ...'}, {user:'user_b',message:'user_b said ...'}]
       var collection = new Backbone.Collection(msgs)
       var collectionView = new ChatroomApp.MessagesCollectionView({collection: collection})
       var layoutView = new ChatroomApp.ChatroomLayoutView()
