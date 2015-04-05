@@ -14,7 +14,7 @@ CEApp.module('PostApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
     },
 
     onRender: function() {
-    	new helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
+    	new CEApp.helpers.DragHelper().drag(this.ui.header).to_move(this.ui.dialog)
     }
   })
 })

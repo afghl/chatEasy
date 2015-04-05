@@ -1,4 +1,4 @@
-window.helpers = window.helpers || {};
+CEApp.helpers = CEApp.helpers || {};
 
 (function (window) {
 	var DragHelper = function() {
@@ -23,7 +23,7 @@ window.helpers = window.helpers || {};
 		}
 	}
 
-	window.helpers.DragHelper = DragHelper
+	CEApp.helpers.DragHelper = DragHelper
 
 	var _mousedownCallback = function (_this) {
 		return function(e) {
