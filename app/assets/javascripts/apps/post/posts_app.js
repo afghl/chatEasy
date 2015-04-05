@@ -22,7 +22,7 @@ CEApp.module('PostApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
   this.on('start', function() {
     var controller = new PostsApp.PostsAppController()
     new this.PostsAppRouter({controller: controller})
-
+    // TODO
     Backbone.history.start()
   })
 })

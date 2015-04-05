@@ -9,13 +9,13 @@ class ApplicationController < ActionController::Base
   include AbstractController::Callbacks      # callbacks for your authentication logic
 
   def set_socket_url
-  	gon.push({socket_url: socket_url})
+  	gon.push({socketUrl: socket_url})
   	puts gon
   end
   private
   def socket_url
   	#TODO in production
-  	Rails.env.production? ? "http://chatty-server.herokuapp.com/" : "http://0.0.0.0:5001"
+  	Rails.env.production? ? "http://chatty-server.herokuapp.com/" : "http://192.168.1.106:5001"
   end
 
 end
