@@ -7,16 +7,6 @@ CEApp.module('Collections', function(PostsApp, CEApp, Backbone, Marionette, $, _
 		initialize: function (options) {
 			this.on('add', function(post) {
 			})
-			this.privateFunction()
 		},
-
-		privateFunction: function() {
-			CEApp.events.on('new-post', (function(_this) {
-				return function(post) {
-					_this.trigger('add', post)
-				}
-			})(this))
-		}
-
 	})
 })
