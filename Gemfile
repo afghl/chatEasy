@@ -65,3 +65,7 @@ gem 'hamlbars', '~> 2.0'
 
 #use compass
 gem 'compass-rails'
+
+#auth
+gem 'omniauth'
+gem 'omniauth-github'
