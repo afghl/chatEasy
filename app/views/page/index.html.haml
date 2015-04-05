@@ -1,10 +1,10 @@
-.container.main-container
+.container
 	.row
 		= render "left_nav"
 		#main-content.col-sm-3
+		#chat-room.row
 
 - content_for :footer do
 	:coffeescript
 		$ ->
 			CEApp.start()
-			new helpers.DragHelper().drag('.js-draggable-header').to_move('.modal-dialog')

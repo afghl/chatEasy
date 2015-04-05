@@ -2,6 +2,7 @@ this.CEApp = (function(Backbone, Marionette) {
 	var App = new Marionette.Application()
 
 	App.on('start', function() {
+    Backbone.history.start()
 	})
 
   App.addInitializer(function() {

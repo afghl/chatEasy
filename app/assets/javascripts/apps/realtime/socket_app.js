@@ -1,4 +1,4 @@
-CEApp.module('RealtimeApp', function(PostsApp, CEApp, Backbone, Marionette, $, _){
+CEApp.module('RealtimeApp', function(RealtimeApp, CEApp, Backbone, Marionette, $, _){
   // this.PostsAppController = Marionette.Controller.extend({
   //   showAllPosts: function () {
   //     //fetch collection
