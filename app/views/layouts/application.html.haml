@@ -9,6 +9,6 @@
 	= render 'layouts/header'
 	=yield
 	.footer
-
+	= include_gon
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
 	=yield :footer
