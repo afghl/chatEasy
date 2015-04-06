@@ -30,5 +30,4 @@
 
 //= require_tree ./apps
 //= require_tree ./collections
-//= require_tree ./models
 //= require_tree ./views

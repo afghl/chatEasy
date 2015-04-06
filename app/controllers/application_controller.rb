@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   private
   def socket_url
   	#TODO in production
-  	Rails.env.production? ? "http://112.74.100.113 :5001/" : "http://192.168.1.106:5001"
+  	Rails.env.production? ? "http://112.74.100.113:5001/" : "http://192.168.1.106:5001"
   end
 
 end
