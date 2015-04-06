@@ -10,12 +10,12 @@ class ApplicationController < ActionController::Base
 
   def set_socket_url
   	gon.push({socketUrl: socket_url})
-  	puts gon
   end
+
   private
   def socket_url
   	#TODO in production
-  	Rails.env.production? ? "http://chatty-server.herokuapp.com/" : "http://192.168.1.106:5001"
+  	Rails.env.production? ? "http://112.74.100.113 :5001/" : "http://192.168.1.106:5001"
   end
 
 end

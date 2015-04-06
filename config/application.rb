@@ -22,5 +22,11 @@ module ChatEasy
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #tell asset pipeline to precompile these files
+    config.assets.precompile += %w[
+        'application.js',
+        'application.css'
+    ]
   end
 end
