@@ -20,7 +20,6 @@
 //= require handlebars
 //= require turbolinks
 //= require socket.io
-//= require_tree .
 
 /** application **/
 //= require ./app
