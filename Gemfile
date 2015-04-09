@@ -69,3 +69,6 @@ gem 'compass-rails'
 #use omniauth 
 gem 'omniauth'
 gem 'omniauth-github'
+
+#use carrierwave
+gem 'carrierwave'
