@@ -1,0 +1,21 @@
+/ = form_for :post do |f| 
+/   = f.text_field :title
+/   = f.text_field :content
+/   = f.text_field :likes
+/   = f.file_field :icon
+/   = f.submit
+/ end
+= semantic_form_for [:admin, @post],:html => { :multipart => true }, :builder => ActiveAdmin::FormBuilder do |f|
+  = f.inputs 'aaaa' do
+    = f.input :title
+    = f.input :content
+    = f.input :likes
+    .upload-box
+      .upload-main
+        %input#post_icon{type: 'file', name: 'post[icon][]', multiple: 'multiple'}
+        %span#file-drag-area{style: 'padding:50px; border:1px solid; display: inline-block; width: 60%;text-align: center;'} drag file
+      .upload-show
+  = f.actions
+
+.dd
+  hello
