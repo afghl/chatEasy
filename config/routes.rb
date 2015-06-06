@@ -4,12 +4,15 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
   root 'page#index'
-  
+
   namespace :api do
     resources :posts
   end
 
   match '/auth/:provider/callback' => 'session#create', via:[:post, :get]
+
+  # test page
+  get 'test' => 'page#test'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
